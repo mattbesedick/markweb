@@ -16,20 +16,18 @@ const Home = () => {
           I create visual experiences through design.
           Get to know me here</p>
         </div>
-        <div className="content-container">
-          <Content
-            project="TMG"
-            image="tmgheader"
-            title="TMG | Family Office" />
-          <Content
-            project="BlessingsinaBackpack"
-            image="blessheader"
-            title="Blessings in a Backpack" />
-          <Content
-            project="HuluSocial"
-            image="huluheader"
-            title="Hulu Social" />
-        </div>
+        <Content
+          project="TMG"
+          image="tmgheader"
+          title="TMG | Family Office" className="content" />
+        <Content
+          project="BlessingsinaBackpack"
+          image="blessheader"
+          title="Blessings in a Backpack" className="content" />
+        <Content
+          project="HuluSocial"
+          image="huluheader"
+          title="Hulu Social" className="content"/>
       </div>
     </div>
   );

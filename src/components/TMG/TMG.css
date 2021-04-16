@@ -1,4 +1,4 @@
-.root {
+/* .root {
     display: flex;
     justify-content: center;
     background-color: black;
@@ -43,3 +43,9 @@
     width: 20rem;
     grid-area: description;
 }
+
+@media (max-width: 500px) {
+    .image-container {
+        grid-template-columns: 1fr;
+    }
+} */
