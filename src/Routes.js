@@ -1,10 +1,14 @@
 import React from 'react';
-import {Route} from 'react-router-dom';
+import {Route, Switch} from 'react-router-dom';
 import Home from './components/Home/Home';
+import TMG from './components/TMG/TMG';
 
 const Routes = () => {
   return (
-    <Route to='/' component={Home} />
+    <Switch>
+      <Route exact path='/' component={Home} />
+      <Route exact path='/tmg' component={TMG} />
+    </Switch>
   );
 };
 

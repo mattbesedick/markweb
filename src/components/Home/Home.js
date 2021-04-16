@@ -1,6 +1,9 @@
-import React from 'react';
+/* eslint-disable no-unused-vars */
+import React, {useEffect, useState} from 'react';
 import './Home.css';
 import Content from './Content';
+import Axios from 'axios';
+import {Image} from 'cloudinary-react';
 
 const Home = () => {
   return (
@@ -16,15 +19,15 @@ const Home = () => {
         <div className="content-container">
           <Content
             project="TMG"
-            image="TMG_Logo-Portfolio"
+            image="tmgheader"
             title="TMG | Family Office" />
           <Content
             project="BlessingsinaBackpack"
-            image="TMG_Logo-Portfolio"
+            image="blessheader"
             title="Blessings in a Backpack" />
           <Content
             project="HuluSocial"
-            image="TMG_Logo-Portfolio"
+            image="huluheader"
             title="Hulu Social" />
         </div>
       </div>

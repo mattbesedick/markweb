@@ -1,11 +1,13 @@
 import React from 'react';
 import './Nav.css';
-import logo from '../../assets/mddlogo_white.png';
+import {Image} from 'cloudinary-react';
+// import logo from '../../assets/mddlogo_white.png';
 
 const Nav = () => {
   return (
     <div className="nav-container">
-      <img className="nav-logo" src={logo}/>
+      {/* <img className="nav-logo" src={logo}/> */}
+      <Image publicId="navlogo" className="nav-logo" />
     </div>
   );
 };
