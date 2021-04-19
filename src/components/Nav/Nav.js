@@ -6,7 +6,6 @@ import {Image} from 'cloudinary-react';
 const Nav = () => {
   return (
     <div className="nav-container">
-
       <Image publicId="navlogo" className="nav-logo" />
     </div>
   );

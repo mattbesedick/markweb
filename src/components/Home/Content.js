@@ -15,7 +15,6 @@ const Content = ({project, image, title}) => {
       <Link to={`${project}`}>
         <Image publicId={image} className="content-logo" onClick={handleClick} />
       </Link>
-      <p>{title}</p>
     </div>
   );
 };

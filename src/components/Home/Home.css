@@ -5,16 +5,7 @@
 }
 
 
-.slide-container {
-    margin-top: 70px;
-    text-align: end;
-}
 
-.slide-container p {
-    margin-right: 30px;
-    font-size: 30px;
-    margin-top: 30px;
-} 
 
 .container {
     background-color: black;
@@ -59,8 +50,8 @@
 }
 
 .content-logo {
-    height: 90%;
-    width: 90%;
+    height: 80%;
+    width: 80%;
 }
 
 .container {
@@ -73,9 +64,12 @@
     grid-area: content;
 }
 
-@media (max-width: 375px) {
-    .container {
+.slide-container {
+    display: flex
+}
 
+@media (max-width: 425px) {
+    .container {
         grid-template-rows: 200px;
     }
     .content-logo {
@@ -83,7 +77,6 @@
         width: 100%;
     }
     .intro p {
-        /* width: 375px; */
         width: 50%;
         margin-left: 0
     }
