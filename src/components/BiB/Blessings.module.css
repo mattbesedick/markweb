@@ -1,0 +1,11 @@
+.container {
+    display: flex;
+}
+
+.header {
+    font-weight: bold;
+    text-align:left;
+    font-size: 2rem;
+    width: 200px;
+    margin-right: 70px;
+}

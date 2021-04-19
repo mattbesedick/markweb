@@ -2,11 +2,14 @@
 import React from 'react';
 import './Nav.css';
 import {Image} from 'cloudinary-react';
+import {Link} from 'react-router-dom';
 
 const Nav = () => {
   return (
     <div className="nav-container">
-      <Image publicId="navlogo" className="nav-logo" />
+      <Link to="/">
+        <Image publicId="navlogo" className="nav-logo" />
+      </Link>
     </div>
   );
 };
