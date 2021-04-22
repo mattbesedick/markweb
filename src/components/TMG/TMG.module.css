@@ -12,3 +12,14 @@
         height: 150px;
     }
 }
+
+@media (max-width: 428px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 1rem 0;
+        height: 150px;
+    }
+}
