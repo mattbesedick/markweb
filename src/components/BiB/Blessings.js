@@ -2,9 +2,27 @@ import React from 'react';
 import styles from './Blessings.module.css';
 import {Image} from 'cloudinary-react';
 import '../Home/Home.css';
+import {motion} from 'framer-motion';
+
 const Blessings = () => {
+  const containerVariants = {
+    hidden: {
+      opacity: 0,
+      y: 50,
+    },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {delay: .5, duration: 1.5},
+    },
+    exit: {
+      opacity: 0,
+    },
+  };
+
   return (
-    <div className="root">
+    <motion.div variants={containerVariants} initial="hidden"
+      animate="visible" exit="exit" className="root">
       <div className={styles.container}>
         <div className={styles.header}>Blessings in a Backpack</div>
         <div className="description">
@@ -21,7 +39,7 @@ const Blessings = () => {
         <Image publicId="bib5" className="image_square" />
         <Image publicId="bib6" className="image_square" />
       </div>
-    </div>
+    </motion.div>
   );
 };
 

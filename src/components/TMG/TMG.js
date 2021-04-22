@@ -1,11 +1,28 @@
 import React from 'react';
 import {Image} from 'cloudinary-react';
 import styles from './TMG.module.css';
+import {motion} from 'framer-motion';
 
 
 const TMG = () => {
+  const containerVariants = {
+    hidden: {
+      opacity: 0,
+      y: 50,
+    },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {delay: .5, duration: 1.5},
+    },
+    exit: {
+      opacity: 0,
+    },
+  };
+
   return (
-    <div className="root">
+    <motion.div variants={containerVariants} initial="hidden"
+      animate="visible" exit="exit" className="root">
       <div className={styles.container}>
         <div className="header">TMG Family Office</div>
         <div className="description">
@@ -23,7 +40,7 @@ const TMG = () => {
         <Image publicId="tmgpage5" className="image_square" />
         <Image publicId="tmgletterhead" className="image_square" />
       </div>
-    </div>
+    </motion.div>
 
   );
 };

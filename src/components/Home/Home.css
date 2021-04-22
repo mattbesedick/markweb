@@ -27,8 +27,8 @@
 }
 
 .content-logo {
-    height: 80%;
-    width: 80%;
+    height: 30rem;
+    width: 45rem;
 }
 
 .container {
@@ -42,7 +42,15 @@
 }
 
 .slide-container {
-    display: flex
+
+}
+
+.slide-container div {
+    width: 74%;
+    margin: 2rem;
+    text-align: end;
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
 .image_container {
@@ -87,7 +95,10 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-}
+    }
+    .intro h1{
+        margin-bottom: 1rem;
+    }    
     .root {
         width: 100%;
         margin: 0 auto;

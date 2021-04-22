@@ -4,14 +4,15 @@ import './Home.css';
 import Content from './Content';
 import {motion} from 'framer-motion';
 
-// const transition = {duration: .6, ease: [0.6,0.01, ]}
 
 const containerVariants = {
   hidden: {
     opacity: 0,
+    y: 50,
   },
   visible: {
     opacity: 1,
+    y: 0,
     transition: {delay: .5, duration: 1.5},
   },
   exit: {
