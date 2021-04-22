@@ -48,3 +48,12 @@
 }
 }
 
+@media (max-width: 375px) {
+    .header {
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.8rem;
+    width: 375px;
+    margin-right: 0;
+}
+}
