@@ -109,7 +109,7 @@
     }
 
     .root {
-        width: 100%;
+        width: 425px;
         margin: 0;
     }
 
@@ -147,5 +147,9 @@
     .container {
         width: 375px; 
         grid-template-columns: 375px;
+    }
+    .root {
+        width: 375px;
+        margin: 0;
     }
 }
